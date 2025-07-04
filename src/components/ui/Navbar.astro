@@ -2,11 +2,11 @@
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  { href: '/about', label: 'About us' },
-  { href: '/#services', label: 'Services' },
-  { href: '/#cases', label: 'Use Cases' },
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/articles', label: 'Blog'},
+  { href: '/about', label: 'Tentang' },
+  { href: '/#services', label: 'Layanan' },
+  { href: '/#cases', label: 'Team' },
+  { href: '/pricing', label: 'Testimoni' },
+  { href: '/articles', label: 'Kontak'},
 ];
 
 const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'Request a quote' };
@@ -18,7 +18,7 @@ const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'R
       <Astronav>
         <div class="flex w-full lg:w-auto items-center justify-between">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/Logo.svg" class="h-8" alt="Logo" />
+            <img src="/bricks.png" class="h-8" alt="Logo" /> <span class="text-3xl">GedeSudika</span>
           </a>
           <div class="block lg:hidden">
             <div id="menu-icon" class="w-8 h-8 text-black cursor-pointer">
@@ -47,26 +47,10 @@ const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'R
                 </a>
               </li>
             ))}
-            <div class="lg:hidden flex items-center justify-center mt-3 gap-4">
-              <a 
-                class="mobile-nav-link px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" 
-                href={navButton.href}
-                data-close-menu="true"
-              >
-                <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
-              </a>
-            </div>
+            
           </ul>
         </nav>
       </Astronav>
-
-      <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href}>
-            <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
-          </a>
-        </div>
-      </div>
     </header>
   </nav>
 </div>
